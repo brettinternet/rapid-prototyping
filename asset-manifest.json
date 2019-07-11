@@ -1,11 +1,16 @@
 {
-  "main.css": "static/css/main.dfbe6f27.css",
-  "main.css.map": "static/css/main.dfbe6f27.css.map",
-  "main.js": "static/js/main.c00e47b9.js",
-  "main.js.map": "static/js/main.c00e47b9.js.map",
-  "static/media/fontawesome-webfont.eot": "static/media/fontawesome-webfont.674f50d2.eot",
-  "static/media/fontawesome-webfont.svg?v=4.7.0": "static/media/fontawesome-webfont.912ec66d.svg",
-  "static/media/fontawesome-webfont.ttf?v=4.7.0": "static/media/fontawesome-webfont.b06871f2.ttf",
-  "static/media/fontawesome-webfont.woff2?v=4.7.0": "static/media/fontawesome-webfont.af7ae505.woff2",
-  "static/media/fontawesome-webfont.woff?v=4.7.0": "static/media/fontawesome-webfont.fee66e71.woff"
+  "files": {
+    "main.js": "./static/js/main.85c79181.chunk.js",
+    "main.js.map": "./static/js/main.85c79181.chunk.js.map",
+    "runtime~main.js": "./static/js/runtime~main.d653cc00.js",
+    "runtime~main.js.map": "./static/js/runtime~main.d653cc00.js.map",
+    "static/css/2.ca5c34be.chunk.css": "./static/css/2.ca5c34be.chunk.css",
+    "static/js/2.e5ee5337.chunk.js": "./static/js/2.e5ee5337.chunk.js",
+    "static/js/2.e5ee5337.chunk.js.map": "./static/js/2.e5ee5337.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.154c6c6ad237b04f7f403ce2bdbb7970.js": "./precache-manifest.154c6c6ad237b04f7f403ce2bdbb7970.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.ca5c34be.chunk.css.map": "./static/css/2.ca5c34be.chunk.css.map",
+    "static/media/font-awesome.css": "./static/media/fontawesome-webfont.fee66e71.woff"
+  }
 }
