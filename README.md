@@ -1,68 +1,65 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Rapid prototyping web projects
 
-## Available Scripts
+This is an SPA boilerplate using Create React App and with rapid configuration. A practical use case is for a timed coding assignment as part of an interview.
 
-In the project directory, you can run:
+### Features
 
-### `npm start`
+- [x] [Create-react-app](https://github.com/facebook/create-react-app)
+- [x] [React-router-dom](https://reacttraining.com/react-router/web/guides/philosophy)
+- [x] [Boostrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+- [x] [Font-awesome](https://fontawesome.com/icons)
+- [x] [Axios](https://github.com/axios/axios)
+- [x] simple API call + routing
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Src
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+I've put all the components in `App.js` for speed coding.
 
-### `npm test`
+- All routes are contained in `App` component.
+- `Header` and `About` are functional components below the `App` component.
+- `HomePage` or the root view is at the top, with two components that list views below.
+- `Results` component lists all the user's repositories on the `HomePage`.
+- `RepoSearch` is a separate view that lists repos with a similar name when a repo is selected from the `Results`.
+- A 404 currently redirects to the root view. See the very bottom of `App.js` to add a 404 route.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Setup
 
-### `npm run build`
+To set up from scratch:
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+npx create-react-app <project_name>
+```
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+```sh
+yarn add react-router-dom axios bootstrap font-awesome
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Add to `index.js`:
 
-### `npm run eject`
+```
+import 'font-awesome/css/font-awesome.css';
+import 'bootstrap/dist/css/bootstrap.css';
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Deploy to GitHub Pages
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`<BrowserRouter>` needs to interperet.
+This is necessary to [make create-react-app work with GitHub Pages](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#building-for-relative-paths).
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Add to `package.json`:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```json
+  "homepage": ".",
+```
 
-## Learn More
+Set `pathPrefix` in `App.js` with the git project name
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```js
+const pathPrefix = "/rapid-prototyping";
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Run
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```sh
+yarn run deploy
+```
