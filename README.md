@@ -1,5 +1,7 @@
 # Rapid prototyping web projects
 
+[![Build Status](https://travis-ci.org/brettinternet/rapid-prototyping.svg?branch=master)](https://travis-ci.org/brettinternet/rapid-prototyping)
+
 This is an SPA boilerplate using Create React App and with rapid configuration. A practical use case is for a timed coding assignment as part of an interview.
 
 ### Features
