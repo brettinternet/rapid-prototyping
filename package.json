@@ -40,7 +40,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/brettinternet/brettinternet.github.io"
+    "url": "https://github.com/brettinternet/rapid-prototyping"
   },
   "devDependencies": {
     "gh-pages": "^2.2.0"
