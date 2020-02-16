@@ -6,12 +6,11 @@ This is an SPA boilerplate using Create React App and with rapid configuration. 
 
 ### Features
 
-- [x] [Create-react-app](https://github.com/facebook/create-react-app)
-- [x] [React-router-dom](https://reacttraining.com/react-router/web/guides/philosophy)
-- [x] [Boostrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
-- [x] [Font-awesome](https://fontawesome.com/icons)
-- [x] [Axios](https://github.com/axios/axios)
-- [x] simple API call + routing
+- [x] [Create-react-app](https://github.com/facebook/create-react-app) - simple React environment and bundling
+- [x] [React-router-dom](https://reacttraining.com/react-router/web/guides/philosophy) - routing
+- [x] [Emotion](https://emotion.sh/docs/introduction) - scoped styles and theming
+- [x] [Rebass](https://github.com/rebassjs/rebass) - out-of-the-box styled components
+- [x] [Axios](https://github.com/axios/axios) - simple API call
 
 ### Src
 
@@ -33,15 +32,10 @@ npx create-react-app <project_name>
 ```
 
 ```sh
-yarn add react-router-dom axios bootstrap font-awesome
+npm i rebass emotion-theming emotion react-router-dom axios
 ```
 
-Add to `index.js`:
-
-```
-import 'font-awesome/css/font-awesome.css';
-import 'bootstrap/dist/css/bootstrap.css';
-```
+[Add theming](https://rebassjs.org/getting-started/) to a `Theme.js` component.
 
 ### Deploy to GitHub Pages
 
@@ -63,5 +57,5 @@ const pathPrefix = "/rapid-prototyping";
 Run
 
 ```sh
-yarn run deploy
+npm run deploy
 ```
